@@ -1,1 +1,54 @@
+<!-- 
+ 
+Set up HTML:
+The question text.
+Four buttons for answer choices.
+An element to display feedback after an answer is selected.
+A “Next Question” button to move onto the next question.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Time!</title>
+</head>
+<body>
+
+    <!-- This has been refactored to move from hardcoding both questions to filling in questions in the feature.js.--->
+    
+    <p id="question">Question 1/2 will load here</p>
+
+    <form id="quizForm">
+        <label>
+            <input type="radio" name="answer" value="0">
+                <span class="choice-text"></span>
+        </label><br>
+
+        <label>
+            <input type="radio" name="answer" value="1">
+                <span class="choice-text"></span>
+        </label><br>
+
+        <label>
+            <input type="radio" name="answer" value="2">
+                <span class="choice-text"></span>
+            </label><br>
+
+        <label>
+            <input type="radio" name="answer" value="3">
+                <span class="choice-text"></span>
+        </label><br>
+</form>
+
+<p id="feedback"></p>
+
+<button id="nextButton" type="button" disabled>Next Question</button>
+
+             <!-- Link to js -->
+        <script src="feature.js"></script>
+</body>
+</html>
 
